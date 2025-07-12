@@ -8,19 +8,25 @@ This guide will walk you through setting up a MongoDB Replicaset with dockerc-co
 
 ### Getting started
 
-1. First, you can create the MongoDB Replicaset using the command:
+1. Clone the repo
+
+```bash
+git clone https://github.com/homelab-2025/mongodb-local-playground.git
+```
+
+2. Once done, you can create the MongoDB Replicaset using the command:
 
 ```bash
 docker-compose up -d
 ```
 
-2. Then when the containers are up, you can connect to the mongodb replicaset by typing:
+3. Then when the containers are up, you can connect to the mongodb replicaset by typing:
 
 ```bash
 docker exec -it mongo1 mongosh
 ```
 
-3. Finally, you can check the status of the replicaset by typing:
+4. Finally, you can check the status of the replicaset by typing:
 
 ```bash
 rs.status()
